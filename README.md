@@ -4,6 +4,17 @@
 
 **URL**: https://lovable.dev/projects/bdb4f90d-70d7-4d6c-8215-44c64c9ce50c
 
+## Environment Variables
+
+Before running the project, create a `.env` file in the root directory with the following variables:
+
+```env
+VITE_OPENAI_API_KEY=your_api_key_here
+VITE_OPENAI_MODEL=gpt-3.5-turbo
+```
+
+Replace `your_api_key_here` with your actual OpenAI API key.
+
 ## How can I edit this code?
 
 There are several ways of editing your application.
