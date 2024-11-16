@@ -1,9 +1,4 @@
 {
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ],
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
@@ -11,9 +6,23 @@
     },
     "noImplicitAny": false,
     "noUnusedParameters": false,
-    "skipLibCheck": true,
+    "skipLibCheck": true, // ライブラリ型定義のチェックをスキップ
     "allowJs": true,
     "noUnusedLocals": false,
-    "strictNullChecks": false
-  }
+    "strictNullChecks": false,
+    "esModuleInterop": true, // ESモジュール互換
+    "allowSyntheticDefaultImports": true, // デフォルトインポートを許可
+    "target": "ES6", // モダンなJavaScriptのターゲット
+    "module": "ESNext", // モジュール解決
+    "moduleResolution": "Node", // Nodeモジュール解決
+    "jsx": "react", // JSXのサポート
+    "resolveJsonModule": true, // JSONのインポートを許可
+    "isolatedModules": true, // 各ファイルをモジュールとして扱う
+    "strict": true // 厳密な型チェック
+  },
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ],
 }
